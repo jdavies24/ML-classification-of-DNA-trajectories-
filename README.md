@@ -75,36 +75,92 @@ Make sure to replace topol.tpr and trajectory.xtc with the appropriate names of 
  
  **Curves+ Analysis**
  
+ 
+ 
 1.     This repository provides an example command for running the Curves+ software with specific input parameters. The command is as follows:
  
-/Filepath/curves+/Cur+ <<!
-&inp file= trajectory.trj, ftop= topol.top, lis= topol, 
-lib=/Filepath/curves+/standard,
-&end
-2 1 -1 0 0
-1:10
-11:20
-!
+**/Filepath/curves+/Cur+ <<!
 
-·       /Filepath/curves+/Cur+
+
+&inp file= trajectory.trj, ftop= topol.top, lis= topol, 
+
+
+lib=/Filepath/curves+/standard,
+
+
+&end
+
+
+2 1 -1 0 0
+
+
+1:10
+
+
+11:20
+
+
+!**
+
+
+
+·       **/Filepath/curves+/Cur+**
+
+
 -       Specifies the path to the Curves+ executable file that is being executed.
-·       <<!
+
+
+·       **<<!**
+
+
 -       Directs the shell to take the following lines as input to the Curves+ program.
-·       file= trajectory.trj
+
+
+·       **file= trajectory.trj**
+
+
 -       Specifies the trajectory file name to be analysed.
-·       ftop=topol.top
+
+
+·       **ftop=topol.top**
+
+
 -       Specifies the topology file name associated with the trajectory.
-·       lis= topol
+
+
+·       **lis= topol**
+
+
 -       Specifies the output file name prefix for the Curves+ analysis results.
-·       lib=/Filepath/curves+/standard
+
+
+·       **lib=/Filepath/curves+/standard**
+
+
 -       Specifies the directory containing the Curves+ library files.
-·       &end:
+
+
+·      ** &end:**
+
+
 -       End of the input section.
-·       2 1 -1 0 0:
+
+
+·       **2 1 -1 0 0**
+
+
 -       Represents the nucleotide numbers corresponding to the order of subunits containing the nucleotides that constitute each strand of the DNA molecule.
-·       1:10 and 11:20
+
+
+·       **1:10 and 11:20**
+
+
 -       Ranges indicating specific residues or frames from the trajectory that will be analysed. In this instance, residues 1 to 10 and residues 11 to 20 will be analysed.
-·       !
+
+
+·       **!**
+
+
 -       End of the input to the Curves+ program.
  
  
