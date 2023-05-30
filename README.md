@@ -79,6 +79,7 @@ Make sure to replace topol.tpr and trajectory.xtc with the appropriate names of 
  
 1.     This repository provides an example command for running the Curves+ software with specific input parameters. The command is as follows:
  
+ 
 **/Filepath/curves+/Cur+ <<!**
 
 
