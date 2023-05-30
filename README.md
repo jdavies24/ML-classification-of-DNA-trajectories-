@@ -83,7 +83,7 @@ Make sure to replace topol.tpr and trajectory.xtc with the appropriate names of 
 **/Filepath/curves+/Cur+ <<!**
 
 
-**&inp file= trajectory.trj, ftop= topol.top, lis= topol, **
+**&inp file= trajectory.trj, ftop= topol.top, lis= topol,**
 
 
 **lib=/Filepath/curves+/standard,**
