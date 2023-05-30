@@ -9,12 +9,19 @@ This repository contains code and resources for combining Curves+ and Canal appr
  
  
 **Table of Contents
+
 ·       Installation
+
 ·       Usage
+
 ·       Data Preparation
+
 ·       Curves+ Analysis
+
 ·       Canal Analysis
+
 ·       Data Preparation and Parameter Separation
+
 ·       Random Forest Deployment (Google Colab)
  
 **Installation**
