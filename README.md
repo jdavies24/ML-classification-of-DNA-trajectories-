@@ -274,7 +274,7 @@ The provided R scripts allow for the separation of data into individual files ba
 5.     The scripts will process the input data according to the specified parameters and generate individual files representative of each parameter.
 
 
-6.     For example data, run data_collection scripts first before seperating paramaters using paramater_seperation.R
+6.     For example data, run data_collection scripts first before seperating paramaters using paramater_seperation.R
 
 
 **Random Forest Deployment (Google Colab)**
