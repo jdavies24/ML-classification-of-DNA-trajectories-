@@ -8,7 +8,7 @@ This repository contains code and resources for combining Curves+ and Canal appr
  
  
  
-**Table of Contents
+**Table of Contents**
 
 ·       Installation
 
