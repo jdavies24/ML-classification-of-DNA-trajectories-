@@ -1,0 +1,49 @@
+;
+;	File 'topol.top' was generated
+;	By user: jamesdavies (501)
+;	On host: Jamess-MacBook-Air-2.local
+;	At date: Tue May 30 15:00:26 2023
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                :-) GROMACS - gmx pdb2gmx, 2021.3-MODIFIED (-:
+;	
+;	Executable:   /usr/local/bin/gmx
+;	Data prefix:  /usr/local
+;	Working dir:  /Users/jamesdavies/Documents/GitHub/Curves + Machine Learning/A
+;	Command line:
+;	  gmx pdb2gmx -f A.pdb -o conf.gro
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amber99bsc1.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_DNA_chain_A.itp"
+#include "topol_DNA_chain_B.itp"
+
+; Include water topology
+#include "./amber99bsc1.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./amber99bsc1.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+DNA_chain_A         1
+DNA_chain_B         1
+SOL         5489
+NA               18
