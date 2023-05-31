@@ -23,6 +23,8 @@ This repository contains code and resources for combining Curves+ and Canal appr
 ·       Data Preparation and Parameter Separation
 
 ·       Random Forest Deployment (Google Colab)
+
+·       Example Data
  
  
 
@@ -299,4 +301,10 @@ To apply the attached Random Forest Classifier code in Google Colab, follow the 
 
 
 6.     Download generated csv files for further analysis.
+
+
+
+**Example Data**
+
+Provided are example inputs for the analysis of two unique DNA structures: AT, composed solely of adenine and thymine base pairs, and GC, composed exclusively of guanine and cytosine base pairs. All the necessary inputs for curves+/canal analysis are provided in the form of pdb, gro, and xtc file formats.
 
